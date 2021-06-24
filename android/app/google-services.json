@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "828648911077",
+    "project_id": "bankslip-flow",
+    "storage_bucket": "bankslip-flow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828648911077:android:98e9a264656f185fd4240c",
+        "android_client_info": {
+          "package_name": "com.example.bankslip_flow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828648911077-107t7eu7k91jcubv7ts4t8oev0n28fqg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bankslip_flow",
+            "certificate_hash": "0cb8203bfa4a0ad549e9ae6b540ec58c0edab050"
+          }
+        },
+        {
+          "client_id": "828648911077-d4tari1ippg0vp3t2l8jth7l74os7mjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYbo9-vW1KUfydIU1nft3maZW3hE7bJEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828648911077-d4tari1ippg0vp3t2l8jth7l74os7mjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
