@@ -1,8 +1,10 @@
-import 'package:bankslip_flow/shared/themes/app_colors.dart';
-import 'package:bankslip_flow/shared/themes/app_images.dart';
-import 'package:bankslip_flow/shared/themes/app_text_styles.dart';
-import 'package:bankslip_flow/shared/widgets/social_login_button.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
+import '../../shared/themes/app_colors.dart';
+import '../../shared/themes/app_images.dart';
+import '../../shared/themes/app_text_styles.dart';
+import '../../shared/widgets/social_login_button.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -60,8 +62,19 @@ class _LoginPageState extends State<LoginPage> {
                     padding:
                         const EdgeInsets.only(left: 40, right: 40, top: 40),
                     child: SocialLoginButton(
-                      onTap: () {
-                        print("Clicked");
+                      onTap: () async {
+                        GoogleSignIn _googleSignIn = GoogleSignIn(
+                          scopes: [
+                            'email',
+                            'https://www.googleapis.com/auth/contacts.readonly',
+                          ],
+                        );
+                        try {
+                          final response = await _googleSignIn.signIn();
+                          print(response);
+                        } catch (error) {
+                          print(error);
+                        }
                       },
                     ),
                   ),
