@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'modules/login/login_page.dart';
+import 'router.dart';
 import 'shared/themes/app_colors.dart';
 
 class AppWidget extends StatelessWidget {
@@ -11,7 +11,8 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primaryColor: AppColors.primary,
       ),
-      home: LoginPage(),
+      initialRoute: "/splash",
+      onGenerateRoute: AppRouter.generateRoutes,
     );
   }
 }
